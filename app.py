@@ -94,7 +94,7 @@ with st.form("registro_form"):
 
                 st.success(f"¡Registro exitoso! Bienvenido/a, {nombre} 🎉")
 
-                url = f"http://localhost:8501/?id={nuevo_id}"  # Cambia esto si subes online
+                url = f"https://valencr17-pythonbumandino-app.streamlit.app/?id={nuevo_id}"
                 qr_img = generar_qr(url)
                 st.image(qr_img, caption="Escanea este QR para ver tus puntos", width=200)
             else:
